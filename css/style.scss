@@ -321,10 +321,69 @@ input {
     }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
     .hero {
         .hero-bg {
             max-width: 60vw;
+        }
+    }
+    .steps {
+        .decor-lines {
+            &::before {
+                content: "";
+                display: block;
+                height: 220px;
+                width: 0px;
+                border: none;
+                border-right: 2px dashed #DBDBDB;
+                position: absolute;
+                top: 90px;
+                transform: rotate( 40deg);
+                right: 15px;
+            }
+            &::after {
+                content: "";
+                display: block;
+                height: 220px;
+                width: 0px;
+                border: none;
+                border-right: 2px dashed #DBDBDB;
+                position: absolute;
+                top: 90px;
+                transform: rotate( -40deg);
+                left: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1900px) {
+    .steps {
+        .decor-lines {
+            &::before {
+                content: "";
+                display: block;
+                height: 220px;
+                width: 0px;
+                border: none;
+                border-right: 2px dashed #DBDBDB;
+                position: absolute;
+                top: 60px;
+                transform: rotate( 40deg);
+                right: 35px;
+            }
+            &::after {
+                content: "";
+                display: block;
+                height: 220px;
+                width: 0px;
+                border: none;
+                border-right: 2px dashed #DBDBDB;
+                position: absolute;
+                top: 60px;
+                transform: rotate( -40deg);
+                left: 35px;
+            }
         }
     }
 }

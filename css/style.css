@@ -339,6 +339,7 @@ input {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05) !important;
   border-radius: 6px;
   border: none;
+  z-index: 0;
 }
 .popovers-container-static .popover .popover-arrow::before {
   border-left-color: transparent;

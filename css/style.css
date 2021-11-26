@@ -29,6 +29,10 @@ p {
   color: #000000;
 }
 
+.font-size-25px {
+  font-size: 24px !important;
+}
+
 .font-size-24px {
   font-size: 24px !important;
 }
@@ -59,6 +63,10 @@ p {
 
 .border-end {
   border-right: 1px solid #000000 !important;
+}
+
+.shadow {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05) !important;
 }
 
 .pt-76px {
@@ -179,6 +187,14 @@ input {
   bottom: 0;
 }
 
+.link-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
 .card {
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -199,6 +215,10 @@ input {
 }
 .card .card-body .list-group-item:disabled, .card .card-body .list-group-item.disabled {
   color: #CECECE;
+}
+
+.border-right-decor {
+  border-right: 1px solid #E7E7E7;
 }
 
 .circle-style {
@@ -240,6 +260,13 @@ input {
   background-repeat: no-repeat;
 }
 
+.steps .step-text {
+  font-weight: 700;
+  font-size: 30px;
+  background: -webkit-linear-gradient(#1B9EFF, #BF3EFE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .steps .step-container {
   padding-top: 168px;
 }
@@ -249,9 +276,10 @@ input {
 .steps .middle-line-decor::before {
   content: "";
   display: block;
-  height: calc(100% - 84px);
-  width: 3px;
-  background: linear-gradient(90deg, #1B9EFF, #BF3EFE);
+  height: calc(100% - 94px);
+  width: 0px;
+  border: none;
+  border-right: 2px dashed #DBDBDB;
   position: absolute;
   top: 42px;
   left: calc(50% - 1.5px);
@@ -262,25 +290,80 @@ input {
     right: -50px;
   }
 }
-.steps .circle-step {
-  width: 54px;
-  height: 54px;
-  border: double 3px transparent;
-  background: linear-gradient(white, white), radial-gradient(circle at top left, #1B9EFF, #BF3EFE);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
+.steps .decor-lines {
   position: relative;
 }
-.steps .circle-step span {
-  font-weight: 700;
-  font-size: 30px;
-  background: -webkit-linear-gradient(#1B9EFF, #BF3EFE);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.steps .decor-lines::before {
+  content: "";
+  display: block;
+  height: 220px;
+  width: 0px;
+  border: none;
+  border-right: 2px dashed #DBDBDB;
+  position: absolute;
+  top: 60px;
+  transform: rotate(40deg);
+  right: 55px;
+}
+.steps .decor-lines::after {
+  content: "";
+  display: block;
+  height: 220px;
+  width: 0px;
+  border: none;
+  border-right: 2px dashed #DBDBDB;
+  position: absolute;
+  top: 60px;
+  transform: rotate(-40deg);
+  left: 55px;
+}
+
+.popovers-container-static {
+  position: relative;
+}
+.popovers-container-static .popover {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 6px;
+  border: none;
+}
+.popovers-container-static .popover .popover-arrow::before {
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.popovers-container-static .popover.with-mw .popover-body {
+  max-width: 180px;
+}
+.popovers-container-static .popover-arrow {
+  position: absolute;
+  transform: translate3d(0px, 19px, 0px);
+  top: 0px;
+}
+.popovers-container-static [data-popper-placement=left] {
+  position: absolute;
+  right: 0;
+  left: initial;
+}
+.popovers-container-static [data-popper-placement=right] {
+  position: absolute;
+  left: 0;
+}
+.popovers-container-static .centered-popup {
+  position: absolute;
+  left: 50%;
+}
+.popovers-container-static .centered-popup [data-popper-placement=top] {
+  position: relative;
+  top: -85px;
+  left: initial;
+  width: 100%;
+  margin-left: -50%;
+}
+.popovers-container-static .centered-popup [data-popper-placement=top] .popover-arrow {
+  position: absolute;
+  left: calc( 50% - 8px);
+  transform: none;
+  top: initial;
 }
 
 @media (max-width: 992px) {
@@ -304,8 +387,16 @@ input {
     font-size: 18px !important;
   }
 
+  .pb-120px {
+    padding-bottom: 50px;
+  }
+
   .hero .quote-logo {
     width: 104px !important;
+  }
+
+  .card .card-body {
+    padding: 25px 20px;
   }
 }
 @media (max-width: 1200px) {

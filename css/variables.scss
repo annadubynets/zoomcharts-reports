@@ -38,6 +38,10 @@ p {
     color: $black;
 }
 
+.font-size-25px {
+    font-size: 24px!important;
+}
+
 .font-size-24px {
     font-size: 24px!important;
 }
@@ -68,6 +72,10 @@ p {
 
 .border-end {
     border-right: 1px solid $black!important;
+}
+
+.shadow {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05)!important;
 }
 
 .pt-76px {

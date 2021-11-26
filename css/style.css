@@ -445,10 +445,6 @@ input {
   .steps .step-img-style {
     width: 145px;
   }
-
-  .popovers-container-static {
-    display: none !important;
-  }
 }
 @media (max-width: 1200px) {
   .btn-primary {
@@ -469,6 +465,10 @@ input {
   }
   .navbar .navbar-brand-img {
     height: 20px;
+  }
+
+  .popovers-container-static {
+    display: none !important;
   }
 }
 @media (max-width: 1400px) {

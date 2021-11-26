@@ -149,6 +149,11 @@ a {
   border-bottom-right-radius: 0;
 }
 
+.avatar-style {
+  width: 96px;
+  height: 96px;
+}
+
 .btn-primary {
   font-weight: 400;
   font-size: 20px;
@@ -424,6 +429,11 @@ input {
 
   .hero .quote-logo {
     width: 104px !important;
+  }
+
+  .avatar-style {
+    width: 64px;
+    height: 64px;
   }
 
   .card .card-body {

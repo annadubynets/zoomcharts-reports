@@ -41,6 +41,11 @@
         border-bottom-right-radius: 0;
     }
     
+    .avatar-style {
+        width: 96px;
+        height: 96px;
+    }
+    
     .btn-primary {
         font-weight: 400;
         font-size: 20px;
@@ -317,6 +322,10 @@
             .quote-logo {
                 width: 104px!important;
             }
+        }
+        .avatar-style {
+            width: 64px;
+            height: 64px;
         }
         .card {
             .card-body {

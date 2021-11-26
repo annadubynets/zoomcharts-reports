@@ -1,0 +1,107 @@
+$black: #000000;
+$silver: #AFAFAF;
+$darkgrey: #585858;
+$grey: #878787;
+$light-grey: #E7E7E7;
+$mediumpurple: #BF3EFE;
+$red: #EF3030;
+$deepskyblue: #1B9EFF;
+$aliceblue: #F4F7FD;
+$white: #FFFFFF;
+$whitesmoke: #FCFCFC;
+.font-family-second {
+    font-family: 'Merriweather';
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: $black;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: $black;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: $black;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    color: $black;
+}
+
+.font-size-24px {
+    font-size: 24px!important;
+}
+
+.font-size-21px {
+    font-size: 21px!important;
+}
+
+.font-size-16px {
+    font-size: 16px!important;
+}
+
+.text-muted {
+    color: $silver!important;
+}
+
+.text-secondary {
+    color: $darkgrey!important;
+}
+
+.text-danger {
+    color: $red!important;
+}
+
+.bg-light {
+    background-color: $aliceblue!important;
+}
+
+.border-end {
+    border-right: 1px solid $black!important;
+}
+
+.pt-76px {
+    padding-top: 76px;
+}
+
+.pt-116px {
+    padding-top: 116px;
+}
+
+.pt-210px {
+    padding-top: 210px;
+}
+
+.pb-37px {
+    padding-bottom: 37px;
+}
+
+.pb-60px {
+    padding-bottom: 60px;
+}
+
+.pb-120px {
+    padding-bottom: 120px;
+}
+
+.pb-235px {
+    padding-bottom: 235px;
+}
+
+.mb-30px {
+    margin-bottom: 30px;
+}
+
+.mb-79px {
+    margin-bottom: 79px;
+}
